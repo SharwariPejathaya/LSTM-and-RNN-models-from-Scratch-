@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Environment
+venv/
+env/
+ENV/
+.env
+
+# Data files (keep datasets small or use Git LFS)
+*.csv
+*.tsv
+*.json
+*.pkl
+*.pickle
+data/
+datasets/
+
+# Model checkpoints (large files - consider Git LFS)
+# Commenting out .pth since you have trained models
+# *.pt
+# *.pth
+*.ckpt
+*.safetensors
+
+# Logs
+logs/
+*.log
+wandb/
+tensorboard/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Cache
+.cache/
+*.cache
+
+# Temporary files
+tmp/
+temp/
+
+# Google Colab
+*.ipynb_checkpoints/
