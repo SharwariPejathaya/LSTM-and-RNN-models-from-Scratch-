@@ -2,7 +2,7 @@
 
 Multi-task learning implementation for intent classification and slot filling in task-oriented dialogue systems using RNN and LSTM architectures.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project implements and compares various neural architectures for two fundamental NLU tasks in dialogue systems:
 - **Intent Classification**: Identifying the user's intention from an utterance
@@ -14,7 +14,7 @@ We evaluate four distinct modeling approaches:
 3. **Intent → Slot** - Intent predictions guide slot filling
 4. **Joint Multi-Task Learning** - Shared encoder for both tasks
 
-## 🏆 Key Results
+##  Key Results
 
 ### ATIS Dataset Performance
 
@@ -33,12 +33,12 @@ We evaluate four distinct modeling approaches:
 | **Joint LSTM** | 0.724 | 0.777 | 0.637 | 0.778 |
 
 ### Performance Highlights
-- ✅ **98.5% slot accuracy** on ATIS with independent RNN
-- ✅ **94.9% intent accuracy** on ATIS with independent LSTM
-- ✅ **Multi-task learning** improves joint understanding with minimal performance trade-off
-- ✅ **LSTM superiority** on complex SLURP dataset with longer sequences
+-  **98.5% slot accuracy** on ATIS with independent RNN
+-  **94.9% intent accuracy** on ATIS with independent LSTM
+-  **Multi-task learning** improves joint understanding with minimal performance trade-off
+-  **LSTM superiority** on complex SLURP dataset with longer sequences
 
-## 📊 Datasets
+## Datasets
 
 ### ATIS (Airline Travel Information System)
 - **Total Utterances**: 5,871
@@ -54,7 +54,7 @@ We evaluate four distinct modeling approaches:
 - **Domain**: Home automation, calendar, weather, etc.
 - **Characteristics**: More diverse and noisy utterances
 
-## 🔧 Model Architectures
+##  Model Architectures
 
 ### 1. Independent Models
 ```
@@ -101,7 +101,7 @@ Shared RNN/LSTM Encoder
 L_total = α * L_slot + (1-α) * L_intent
 ```
 
-## 🛠️ Implementation Details
+##  Implementation Details
 
 ### Hyperparameters
 
@@ -133,7 +133,7 @@ L_total = α * L_slot + (1-α) * L_intent
 - **Intent Classification**: Macro-averaged Precision, Recall, F1-score, Accuracy
 - **SLURP**: Additional weighted F1-scores and class-weighted loss
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 ├── Assignment_2_Report.pdf          # Comprehensive project report
@@ -155,7 +155,7 @@ L_total = α * L_slot + (1-α) * L_intent
 └── requirements.txt                 # Python dependencies
 ```
 
-## 🔬 Key Findings
+##  Key Findings
 
 ### 1. Architecture Comparison
 - **LSTM consistently outperforms RNN** on both datasets, especially SLURP
@@ -177,7 +177,7 @@ L_total = α * L_slot + (1-α) * L_intent
 - Joint models sacrifice slight token-level accuracy for better task synergy
 - Multi-task learning reduces overfitting through shared representations
 
-## 📈 Detailed Analysis
+##  Detailed Analysis
 
 ### Independent Models
 - **RNN on ATIS**: Best slot F1 (0.791) and intent F1 (0.841)
@@ -194,7 +194,7 @@ L_total = α * L_slot + (1-α) * L_intent
 - **LSTM joint model** maintains competitive performance on both tasks
 - **Lower slot accuracy** sometimes observed due to optimization trade-offs
 
-## 🎓 Educational Value
+##  Educational Value
 
 This project demonstrates:
 - **Sequence modeling** with RNNs and LSTMs
@@ -203,7 +203,7 @@ This project demonstrates:
 - **Handling class imbalance** in real-world datasets
 - **Hyperparameter tuning** and model selection
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 ```bash
@@ -224,49 +224,16 @@ pip install -r requirements.txt
 # Includes class-weighted loss for handling imbalance
 ```
 
-## 📊 System Configuration
+##  System Configuration
 
 - **Platform**: Google Colab
 - **OS**: Linux 6.1.123+
 - **CPU**: Intel Xeon @ 2.20 GHz
 - **RAM**: 12.7 GB
 
-## 📚 References
+##  References
 
 - **ATIS Dataset**: [HuggingFace - tuetschek/atis](https://huggingface.co/datasets/tuetschek/atis)
 - **SLURP Dataset**: [GitHub - pswietojanski/slurp](https://github.com/pswietojanski/slurp/tree/master/dataset/slurp)
 - **Multi-Task Learning**: Joint training of related NLU tasks
 - **Sequence Labeling**: Token-level classification for slot filling
-
-## 👥 Contributors
-
-**Group 14**
-- Vishnu Sudhan Harisankar (2022A7PS1317H)
-- Sana Jose (2022A3PS0636H)
-- Sharwari Pejathaya (2022B3AA0792H)
-- Kriti Saluja (2022B5A70698H)
-- Priten Rathore (2022B3AA0690H)
-
-## 📝 Citation
-
-```bibtex
-@project{slot-intent-classification,
-  title={Slot Filling and Intent Classification on ATIS and SLURP Datasets},
-  author={Group 14},
-  year={2025},
-  institution={BITS Pilani},
-  note={Multi-task learning for task-oriented dialogue systems}
-}
-```
-
-## 🤝 Contributing
-
-This is an academic project completed as part of an NLP course assignment.
-
-## 📄 License
-
-This project is available for educational and research purposes.
-
----
-
-**Note**: This implementation provides a comprehensive comparison of neural architectures for joint NLU tasks, demonstrating the effectiveness of multi-task learning in dialogue systems.
